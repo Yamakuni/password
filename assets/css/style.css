@@ -1,0 +1,208 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+#ligne {
+  width: 70vw; }
+
+#ligne, .wrapper, .content {
+  display: flex;
+  flex-direction: column; }
+
+#ligne {
+  margin-top: 5%;
+  align-items: center; }
+  @media screen and (max-width: 700px) {
+    #ligne {
+      width: 93vw; } }
+
+#txt {
+  width: 100%;
+  padding: 1.2vh 0;
+  background: #fbfbfb;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  color: #00a4f0;
+  font-size: 1.2em;
+  font-weight: 400; }
+  #txt:hover {
+    box-shadow: 0 0 3px 1px #f04c00;
+    transition: box-shadow ease 150ms; }
+  @media screen and (max-width: 700px) {
+    #txt {
+      font-size: 0.8em; } }
+
+.compteur {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2vh 0;
+  font-size: 1.1em; }
+  @media screen and (max-width: 700px) {
+    .compteur {
+      font-size: 0.8em; } }
+
+em {
+  color: #f04c00;
+  font-weight: 400; }
+
+.accordion,
+.button {
+  margin: 0;
+  height: 7vh;
+  width: 20vw;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05); }
+  @media screen and (max-width: 700px) {
+    .accordion,
+    .button {
+      height: 6vh;
+      width: 40vw; } }
+
+.button {
+  margin: 0 0 3vh;
+  color: #f04c00;
+  background-color: #ffffff;
+  border: solid 1px #f04c00;
+  border-radius: 4px; }
+  .button:hover {
+    color: #ffffff;
+    background-color: #f04c00; }
+
+.accordion {
+  font-size: 1em;
+  border: none; }
+  .accordion:hover {
+    color: #f04c00; }
+  @media screen and (max-width: 700px) {
+    .accordion {
+      font-size: 0.8em; } }
+
+.fieldset {
+  padding: 2vh 4vw;
+  background-color: #ffffff;
+  border: solid 1px #ff8c57;
+  border-radius: 3px;
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out; }
+
+.fieldset .field {
+  margin: 0.8vh 0; }
+
+input[type=text] {
+  margin: 2%;
+  width: 5vw;
+  padding: 1px 5px; }
+
+select {
+  margin: 2%; }
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif; }
+
+body, #txt {
+  background-color: #fbfbfb; }
+
+.title, .container {
+  background-color: #ffffff; }
+
+.main {
+  height: 94%;
+  display: flex; }
+
+.container {
+  margin: 5% auto;
+  width: 80%;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 3px; }
+  @media screen and (max-width: 700px) {
+    .container {
+      margin: 0;
+      width: 100%;
+      box-shadow: none; } }
+
+.wrapper {
+  height: 100%;
+  align-items: center;
+  justify-content: space-between; }
+
+.content {
+  flex: 1;
+  padding: 2vh;
+  text-align: justify;
+  align-items: center; }
+
+.title {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.05);
+  height: 6%;
+  display: flex;
+  align-items: center; }
+  @media screen and (max-width: 700px) {
+    .title {
+      box-shadow: none; } }
+
+h1 {
+  padding-left: 10%;
+  font-size: 4vh;
+  text-align: left;
+  font-weight: 700;
+  color: #f04c00;
+  font-family: "Permanent Marker", cursive; }
+  @media screen and (max-width: 700px) {
+    h1 {
+      width: 100%;
+      padding-left: 0;
+      text-align: center; } }
+
+.footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  width: 100%; }
+
+.footer-content {
+  padding: 2vh 2vw;
+  font-size: 0.9em;
+  color: #707f8e;
+  text-align: center; }
+  .footer-content a {
+    text-decoration: none;
+    color: #34495e;
+    font-weight: 400; }
+  @media screen and (max-width: 700px) {
+    .footer-content {
+      font-size: 0.7em; } }

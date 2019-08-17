@@ -1,0 +1,115 @@
+// -------------------------------------------------------------------------- //
+//                                     General                                //
+// -------------------------------------------------------------------------- //
+html {
+  height: 100%;
+  margin:0;
+  padding:0;
+}
+
+body {
+  height: 100%;
+  margin:0;
+  padding:0;
+  font-family: $text-secondary-typography;
+}
+
+body, #txt {
+  background-color: $bg-darken-color;
+}
+
+
+.title, .container {
+  background-color: $bg-lighten-color;
+}
+
+.main{
+  height: 94%;
+  display: flex;
+}
+.container {
+  margin: 5% auto;
+  width: 80%;
+  box-shadow: 0 0 5px 3px $border-color;
+  border-radius: 3px;
+
+  @media screen and (max-width: 700px){
+    margin: 0;
+    width: 100%;
+    box-shadow: none;
+  }
+}
+
+.wrapper {
+  height: 100%;
+
+  @extend %flex_column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content{
+  flex: 1;
+  padding: 2vh;
+  text-align: justify;
+
+  @extend %flex_column;
+  align-items: center;
+}
+
+
+// -------------------------------------------------------------------------- //
+//                                      Title                                 //
+// -------------------------------------------------------------------------- //
+.title {
+  box-shadow: 0 5px 5px -3px darken($border-color, 50%);
+  height: 6%;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 700px){
+  box-shadow: none;
+  }
+}
+
+h1 {
+  padding-left: 10%;
+  font-size: 4vh;
+  text-align: left;
+  font-weight: $bold;
+  color: $dominant-color-primary;
+  font-family: $text-primary-typography;
+
+  @media screen and (max-width: 700px){
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+
+// -------------------------------------------------------------------------- //
+//                                     Footer                                 //
+// -------------------------------------------------------------------------- //
+
+.footer {
+  border-top: 1px solid $border-color;
+  width: 100%;
+}
+
+.footer-content {
+  padding: 2vh 2vw;
+  font-size: 0.9em;
+  color: $text-secondary-color;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: $text-primary-color;
+    font-weight: $normal;
+  }
+
+  @media screen and (max-width: 700px) {
+    font-size: 0.7em;
+  }
+}
